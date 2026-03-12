@@ -299,7 +299,7 @@ function Dashboard(props) {
           e(YAxis, {tick:{fill:'#3D6B8A',fontSize:10},axisLine:false,tickLine:false,tickFormatter:function(v){return v>=1000?(v/1000)+'k':v;}}),
           e(Tooltip, {contentStyle:{background:'rgba(7,22,40,.95)',border:'1px solid rgba(0,212,255,.3)',borderRadius:9,fontSize:12},labelStyle:{color:'#7BA7C9'},itemStyle:{color:'#00D4FF'},formatter:function(v){return [fmtDist(v),'거리'];}}),
           e(Bar, {dataKey:'dist',radius:[6,6,0,0]},
-            chartData.map(function(_,i){return e(Cell,{key:i,fill:'rgba(0,212,255,'+(0.38+i*0.07)+')';})})
+            chartData.map(function(_,i){return e(Cell,{key:i,fill:'rgba(0,212,255,'+(0.38+i*0.07)+)';})})
           )
         )
       )
